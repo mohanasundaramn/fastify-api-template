@@ -3,8 +3,8 @@
 import { type Static, Type } from '@sinclair/typebox';
 
 export const envSchema = Type.Object({
-  PORT: Type.Number(),
-  DATABASE_URL: Type.String(),
+	PORT: Type.Number(),
+	DATABASE_URL: Type.String(),
 });
 
 export type EnvType = Static<typeof envSchema>;
