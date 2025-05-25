@@ -1,0 +1,11 @@
+{
+	"watch": ["src/**/*", "api/openapi.yaml", ".env"],
+	"ext": "ts,yaml,env",
+	"exec": "npm run gen:schema && tsx ./src/server.ts",
+	"ignore": [
+		"coverage/*",
+		"dist/*",
+		"node_modules/*",
+		"src/schemas/env.schema.ts"
+	]
+}
