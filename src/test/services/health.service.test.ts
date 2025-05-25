@@ -1,6 +1,6 @@
-import { app } from '@/app';
 import supertest from 'supertest';
 import { afterAll, beforeAll, describe, it } from 'vitest';
+import { app } from '../../app';
 
 describe('HealthService', () => {
 	beforeAll(async () => {
